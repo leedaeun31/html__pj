@@ -1,21 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-    if (typeof kakao === "undefined") {
-        console.error("카카오 API가 로드되지 않았습니다.");
-        return;
-    }
-
-    var mapContainer = document.getElementById('map'); // 지도를 표시할 div
-    var mapOption = {
-        center: new kakao.maps.LatLng(36.32772686390662, 127.43566937720794), // 대전 좌표
-        level: 3
+    // 📌 정동문화사 지도
+    var mapContainerJDM = document.getElementById('map-jdm'); 
+    var mapOptionJDM = { 
+        center: new kakao.maps.LatLng( 36.32762795975153, 127.43560757260673), // ✅ 정동문화사 위도, 경도
+        level: 3 
     };
+    var mapJDM = new kakao.maps.Map(mapContainerJDM, mapOptionJDM);
 
-    var map = new kakao.maps.Map(mapContainer, mapOption);
-
-    // 마커 추가
-    var marker = new kakao.maps.Marker({
-        position: new kakao.maps.LatLng(36.32772686390662, 127.43566937720794)
+    var markerJDM = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng( 36.32762795975153, 127.43560757260673) // ✅ 마커 위치 (정동문화사)
     });
+    markerJDM.setMap(mapJDM);
 
-    marker.setMap(map);
+    // 📌 몽심 지도
+    var mapContainerMS = document.getElementById('map-ms'); 
+    var mapOptionMS = { 
+        center: new kakao.maps.LatLng(36.32512096654963, 127.42354923789819), // ✅ 몽심 위도, 경도
+        level: 3 
+    };
+    var mapMS = new kakao.maps.Map(mapContainerMS, mapOptionMS);
+
+    var markerMS = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(36.32512096654963, 127.42354923789819) // ✅ 마커 위치 (몽심)
+    });
+    markerMS.setMap(mapMS);
 });
