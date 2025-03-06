@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전 빵집</title>
+    <link rel="stylesheet" href="css/대전.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <header>
+        <img src="images/빵 아이콘.png" width="60px" height="50px">
+        <h2 id="header_title">대전 빵집</h2>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <b>
+                <li><a href="index.html">main</a></li>
+                <li><a href="청주.html">청주</a></li>
+            </b>
+        </ul>
+    </nav><hr>
+    <main>
+        <section class="store-section">
+            <p class="store-title">🍞 정동문화사</p>
+            <div class="store-content">
+                <!-- 왼쪽: 이미지 -->
+                <div class="image-container">
+                    <img src="images/images.jpg" alt="정동문화사" height="300" width="330" class="store-image">
+                </div>
+                <!-- 오른쪽: 대표 메뉴 -->
+                <div class="menu-container">
+                    <div class="menu-item">
+                        <p>☎️ 전화번호</p>
+                        <ul>
+                            <li>0503-7150-8691</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <p>🕒 영업정보</p>
+                        <ul>
+                            <li>화요일 ~ 토요일 (12:00 ~ 17:00)</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <p>📁 SNS</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/jd_moonhwasa">instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <p>🍪 대표메뉴</p>
+                        <ul>
+                            <li>휘낭시에</li>
+                            <li>에그타르트</li>
+                            <li>까눌레</li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        
+            <!-- 아래: 지도 -->
+            <div class="map-container">
+                <h3>🚩 위치</h3>
+                <div id="map"></div>
+            </div>
+        </section>       
+    </main>
+    <footer>1</footer>
+
+    <!-- ✅ 카카오 맵 API는 대전.html에서만 로드 -->
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7851cace3bea82a1e86b63e6a0df1242&libraries=services"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

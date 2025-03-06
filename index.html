@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>디저트 LIST</title>
+    <link rel="stylesheet"href="css\index.css">
     <style>
         html,body {margin:0;padding: 0; height: 100%;}
         .header { width: 100%;height: 10%;}
@@ -13,8 +14,8 @@
     </style>
 </head>
 <body>
-    <header>
-        <h2><a id = "chap1">대전 빵집 리스트</a> </h3>
+    <header class="head">
+        <h2><a id = "chap1">✨대전 빵집 리스트✨</a> </h2>
     </header>
     <nav>
         <hr>
@@ -26,76 +27,19 @@
         <img src = "images/빵냥이.jpg" alt ="이 이미지는 걍 구글에 간식 먹고 싶다고 치니깐 나온 이미지 입니당">
     </nav>
     <section>
+        <hr>
         <article>
-            <ol type = "1" start = "value">
-                <li>
-                    정동문화사 
-                    <ul>
-                        <li> 휘낭시에</li>
-                        <li>에그타르트</li>
-                        <li>까눌레</li>
-                    </ul>
-                    &nbsp;&nbsp;&nbsp;#오픈런 필수 
-                </li> <br>
-                <li>
-                    몽심
-                    <ul>
-                        <li>마들렌</li>
-                        <li>소금식빵</li>
-                        <li>바게트류</li>
-                    </ul>
-                    &nbsp;&nbsp;&nbsp;#1호점 : 구움과자 메인 2호점 : 제빵류 3호점 : 바게트류
-                </li> <br>
-                <li>
-                    콜드버터베이크샵 탄방점
-                    <ul>
-                        <li>베이글 산도</li>
-                        <li>치즈케잌</li>
-                        <li>소금빵</li>
-                    </ul> 
-                    &nbsp;&nbsp;&nbsp;#대흥점(본점) 소금빵,모찌방,휘낭시에 팔음 
-                </li> <br>
-                <li>
-                    리저트 베이크샵 
-                    <ul>
-                        <li>소금빵</li>
-                    </ul>
-                    &nbsp;&nbsp;&nbsp;#배달로도 가능하지만 직접 가보고 싶음
-                </li> <br>
-            </ol>  <hr> <br>
-        </article>
-        <article>
-            <table border="1"> 
-                <caption> <strong>빵집 사진 및 주소</strong> </caption>
-                <tr><th>이름</th><th>이미지</th><th>주소</th></tr>
-                <tbody>
-                    <tr>
-                        <td> <a href="https://map.naver.com/p/search/%EC%A0%95%EB%8F%99%EB%AC%B8%ED%99%94%EC%82%AC/place/1710005494?placePath=?entry=pll&from=nx&fromNxList=true&searchType=place">정동문화사</a> </td> 
-                        <td> <img src = "images/images.jpg" width="50" height="50"></td>
-                        <td> 대전역 인근 </td>
-                    </tr>
-                    <tr>
-                        <td> <a href="https://map.naver.com/p/entry/place/1007780014?lng=127.4235616&lat=36.3251371&placePath=%2Fhome&entry=plt&searchType=place">몽심</a> </td> 
-                        <td> <img src = "images/다운로드.jpg" width="50" height="60"></td>
-                        <td> 한남대 인근 <br> 도안동 <br> 대흥동 </td>
-                    </tr>
-                    <tr>
-                        <td> <a href="https://map.naver.com/p/entry/place/1393597135?c=15.00,0,0,0,dh">콜드버터베이크샵 탄방점</a> </td> 
-                        <td> <img src = "images/다운로드 (1).jpg" width="50" height="50"></td>
-                        <td> 탄방동 </td>
-                    </tr>
-                    <tr>
-                        <td> <a href="https://map.naver.com/p/entry/place/1924518027?c=15.00,0,0,0,dh">리저트베이크샵</a> </td> 
-                        <td> <img src = "images/다운로드 (2).jpg" width="50" height="50"></td>
-                        <td> 노은동 </td>
-                    </tr>
-                </tbody>
-            </table> <br> <hr>
+            <h3> 지역을 선택하세요! </h3>
+            <select name="location" onchange="location.href=this.value">    
+                <option value="" disabled selected>지역 선택</option>
+                <!-- disabled : 옵션을 선택할 수 없도록 설정 selected : 페이지 로드 시 기본으로 선택 -->
+                <option value="대전.html">대전</option>
+                <option value="청주.html">청주</option>
+            </select>
         </article>
     </section>
     <footer>
-        <a href="images/정형돈.jpg">누르세욤✨</a>
-        <a href="#chap1"> <img src ="images/UP.png" alt = "위로 이동" width="13" height="15"></a>
+
     </footer>
 </body>
 </html>
