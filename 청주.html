@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>청주 빵집</title>
+    <link rel="stylesheet" href="css/청주.css">
 </head>
 <body>
-    <h1> 청주 빵집집</h1>
+    <header>
+        <img src="images/빵 아이콘.png" width="60px" height="50px">
+        <h2 id="header_title">청주 빵집</h2>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <b>
+                <li><a href="index.html">main</a></li>
+                <li><a href="대전.html">대전전</a></li>
+            </b>
+        </ul>
+    </nav><hr>
+    <main>
+        <section class="store-section">
+            <p class="store-title">🍞 시옷기역삐읍</p>
+            <div class="store-content">
+                <!-- 왼쪽: 이미지 -->
+                <div class="image-container">
+                    <img src="images/ㅅㄱㅂ.png" alt="ㅅㄱㅂ" height="300" width="330" class="store-image">
+                </div>
+                <!-- 오른쪽: 대표 메뉴 -->
+                <div class="menu-container">
+                    <div class="menu-item">
+                        <p>☎️ 전화번호</p>
+                        <ul>
+                            <li>0507-1497-1526</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <p>🕒 영업정보</p>
+                        <ul>
+                            <li>월요일 ~ 금요일 (10:00 ~ 20:00 / Last Order : 19:30)</li>
+                            <li>토요일 (10:00 ~ 19:00 / Last Order : 18:30)</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <p>📁 SNS</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/sogumbbangzip">instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <p>🍪 대표메뉴</p>
+                        <ul>
+                            <li>소금빵</li>
+                            <li>소금빵 샌드위치</li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+            <div class="map-container">
+                <h3>🚩 위치</h3>
+                <div id="map"></div>
+            </div>  
+        </section> 
+          
+    </main>
+    <footer>1</footer>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7851cace3bea82a1e86b63e6a0df1242"></script>
+    <script src="js/ch.js"></script>
+
 </body>
 </html>
