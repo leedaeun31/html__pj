@@ -1,0 +1,5 @@
+dataconnect
+dataconnect-generated
+node_modules
+firebase.json
+firebase-debug.log
